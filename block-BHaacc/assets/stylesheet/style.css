@@ -1,0 +1,496 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* font-family: "Lato", sans-serif; */
+
+/* font-family: "Roboto Mono", monospace; */
+
+/* Custum style */
+
+body {
+	line-height: 1.5;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.align-top {
+	align-self: flex-start;
+}
+.justify-start {
+	justify-content: flex-start;
+}
+
+.flex-1{
+	display: flex;
+	justify-content: space-between;
+}
+
+.wrap {
+	flex-wrap: wrap;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* Hero */
+
+.hero {
+	height: 850px;
+	background-image: linear-gradient(
+			to left,
+			rgba(12, 238, 34, 0.541),
+			rgba(26, 109, 243, 0.733)
+		),
+		url(../media/home-bg.jpg);
+	margin-bottom: 100px;
+}
+
+.hero-header {
+	padding-top: 40px;
+	font-family: "Lato", sans-serif;
+	padding-bottom: 200px;
+}
+
+.brand {
+	color: white;
+	font-size: 28px;
+	font-weight: 900;
+	margin-right: 100px;
+}
+
+.header-nav a {
+	color: white;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	margin-left: 40px;
+}
+
+.header-social-media a {
+	color: white;
+	margin-right: 20px;
+}
+
+.header-social-media {
+	margin-left: 200px;
+
+	justify-self: flex-end;
+}
+
+header button {
+	color: white;
+	font-size: 16px;
+	padding: 15px;
+	font-weight: 700;
+	background-color: rgba(241, 28, 28, 0.815);
+	outline: 0;
+	border: 0;
+	border-radius: 25px;
+}
+
+h1 {
+	color: white;
+	font-size: 46px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.start-button {
+	color: white;
+	border: 2px solid white;
+	padding: 15px;
+	border-radius: 25px;
+	font-weight: 700;
+}
+
+.call-us {
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.for-inquiry {
+	color: white;
+	display: block;
+	font-size: 14px;
+	margin-left: 40px;
+}
+.for-inquiry a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+/* Let us introduce */
+
+.flex-40 {
+	flex: 0 1 40%;
+}
+
+h3 {
+	font-size: 32px;
+	padding-bottom: 15px;
+}
+
+.box {
+	height: 10px;
+	width: 10px;
+	background-color: rgba(128, 128, 128, 0.616);
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 16px;
+	color: gray;
+	line-height: 1.7;
+}
+
+.mb-15 {
+	margin-bottom: 20px;
+}
+
+.meter {
+	flex: 0 1 20%;
+}
+
+.meter span {
+	color: black;
+}
+
+
+.about-img {
+	flex: 0 1 30%;
+	width: 350px;
+}
+
+/* Blog */
+
+.flex-48 {
+	flex: 0 1 48.5%;
+}
+
+.blog {
+	background-color: #d8d1d1;
+}
+
+h2 {
+	font-size: 32px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.dotted-box {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.blog-article {
+	background-color: white;
+	margin-bottom: 30px;
+	border-radius: 6px;
+}
+
+.about-blog-article {
+	margin-left: 30px;
+}
+
+.date {
+	color: #a70707;
+	font-size: 14px;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.about-blog-article a {
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	background: #d8d1d1;
+	padding: 15px;
+	border-radius: 25px;
+}
+
+.blog-article-para {
+	padding-bottom: 50px;
+}
+
+/* Work */
+
+.gallery {
+	margin-bottom: 80px;
+}
+
+.gallery img {
+	flex: 0 1 23%;
+}
+
+/* Contact */
+
+.details {
+	flex: 0 1 60%;
+}
+
+.flex-47 {
+	flex: 0 1 46.5%;
+}
+
+.contact {
+	background-image: linear-gradient(to right, #1e7ddd, #7cef66);
+}
+
+.contact h2 {
+	color: white;
+}
+
+.details input {
+	font-size: 14px;
+	font-weight: 700;
+	border-radius: 8px;
+	padding: 20px 0 20px 5px;
+	margin-bottom: 20px;
+	border: none;
+}
+
+.requirement input {
+	padding-bottom: 100px;
+	border: none;
+}
+
+.flex-65 {
+	width: 99%;
+}
+
+.message {
+	color: white;
+	font-size: 16px;
+	background-color: rgb(189, 8, 8);
+	padding: 20px 60px;
+	border: none;
+	border-radius: 28px;
+	margin-bottom: 80px;
+}
+
+/* map */
+
+.map-container iframe {
+	height: 300px;
+	border-radius: 50%;
+}
+
+/* About Company */
+
+.about-company {
+	background-color: black;
+	padding: 50px 0;
+}
+
+h5 {
+	color: white;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.hydro-company p{
+	color: white;
+	line-height: 1.6;
+}
+
+.hydro-company{
+	flex: 0 1 50%;
+}
+
+.company{
+	flex: 0 1 20%;
+}
+
+.company a{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+.service{
+	flex: 0 1 20%;
+}
+
+.service a{
+color: white;
+text-decoration: none;
+display: block;
+}
+
+.find-us{
+	flex: 0 1 20%;
+}
+
+.find-us span{
+	color: white;
+
+}
+
+hr{
+	width: 1340px;
+	margin: 0px;
+}
+
+/* Footer */
+
+.footer{
+	background-color: black;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.footer span{
+	color: white;
+}
+
+.mb-number a{
+	color: white;
+	margin-left: 10px;
+}
+
+.footer-nav{
+	margin-right: 100px;
+}
